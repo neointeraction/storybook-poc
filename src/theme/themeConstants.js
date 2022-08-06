@@ -9,7 +9,7 @@ const colors = {
     lightGreen:"#936D0A",
     black:"#1B1B1B",
     white:"#F5F5F5",
-    grey:rgba(100, 116, 139, 0.6),
+    grey:"rgba(100, 116, 139, 0.6)",
 
 }
 
