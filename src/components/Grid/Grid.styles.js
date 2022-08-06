@@ -9,6 +9,7 @@ export const GridWrapper = styled.div(
     backgroundColor,
     gap,
     alignContent,
+    textAlign,
     justifyContent,
     height,
     columns = 3
@@ -18,7 +19,8 @@ export const GridWrapper = styled.div(
     grid-gap: ${gap ? gap : '12px'};
     grid-auto-flow:'row';
     grid-template-columns: ${columns && `repeat(${columns}, 1fr )` };
-    align-content:${alignContent ? alignContent: ''};
+    align-content:${alignContent ? alignContent : ''};
+    text-align:${textAlign ? textAlign : ''};
     justify-content:${justifyContent ? justifyContent: 'left'};
     height:${height ? height: '50px'};     
   `

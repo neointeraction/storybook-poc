@@ -1,5 +1,5 @@
 export const SIZE = {SMALL:'sm', MEDIUM:'md', LARGE:'lg'};
-export const ALIGN = {LEFT:'left', RIGHT:'right', CENTER:'center'}
+export const TEXTALIGN = {LEFT:'left', RIGHT:'right', CENTER:'center'}
 export const BUTTON_TYPES = ["primary","secondary"];
 
 export const TITLE_LEVELS = {

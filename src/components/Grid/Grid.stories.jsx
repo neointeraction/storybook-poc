@@ -1,5 +1,5 @@
 import React from 'react';
-import { ALIGN } from 'src/data/constants';
+import { TEXTALIGN } from 'src/data/constants';
 import { Grid } from './Grid';
 import { Cell } from './Cell/Cell.styles'
 
@@ -7,11 +7,12 @@ import { Cell } from './Cell/Cell.styles'
 export default {
   title: 'Example/Grid',
   component: Grid,
+  subComponent:{Cell},
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
     textAlign: {
-      control: 'select', options: Object.values(ALIGN)
+      control: 'select', options: Object.values(TEXTALIGN)
     }
   }
 };
@@ -22,7 +23,7 @@ const Template = (args) => <Grid {...args} > <Cell>Cell 1</Cell><Cell>Cell 2</Ce
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  textAlign: ALIGN.LEFT,
+  textAlign: TEXTALIGN.CENTER,
 };
 
 
