@@ -7,7 +7,6 @@ import { Cell } from './Cell/Cell.styles'
 export default {
   title: 'Example/Grid',
   component: Grid,
-  subComponent:{Cell},
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },

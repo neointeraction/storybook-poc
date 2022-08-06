@@ -27,6 +27,6 @@ Grid.propTypes = {
 
 Grid.defaultProps = {
   backgroundColor: null,
-  columns: 2,
+  columns: 3,
   textAlign:'center'
 };
