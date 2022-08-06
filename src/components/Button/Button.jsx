@@ -4,15 +4,9 @@ import { ButtonWrapper } from './Button.styles';
 import { SIZE } from 'src/data/constants';
 
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary
-    ? 'storybook-button--primary'
-    : 'storybook-button--secondary';
   return (
     <ButtonWrapper
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(
-        ' '
-      )}
       style={backgroundColor && { backgroundColor }}
       size={size}
       primary={primary}
